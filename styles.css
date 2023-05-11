@@ -2,6 +2,32 @@ body {
 			margin: 0;
 			padding: 0;
 		}
+		header, footer {
+			background-color: yellowgreen;
+			grid-area: header;
+			padding: 1em;
+		}
+		nav {
+			background-color: #D7E8D4;
+			grid-area: nav;
+			padding: 1em;
+		}
+		article {
+			grid-area: article;
+			display: grid;
+			grid-template-columns: 3fr 1fr;
+			padding: 1em;
+			min-height: 60vh;
+		}
+		aside {
+			background-color: #D7E8D4;
+			padding: 1em;
+		}
+		footer {
+			background-color: yellowgreen;
+			grid-area: footer;
+			padding: 1em;
+		}
 		.container {
 			display: grid;
 			grid-template-columns: 1fr 4fr;
@@ -13,30 +39,4 @@ body {
 				"nav article"
 				"footer footer";
 			height: 100vh;
-		}
-		header {
-			grid-area: header;
-			background-color: yellowgreen;
-			padding: 1em;
-		}
-		nav {
-			grid-area: nav;
-			background-color: #D7E8D4;
-			padding: 1em;
-		}
-		article {
-			grid-area: article;
-			display: grid;
-			grid-template-columns: 3fr 1fr;
-			min-height: 60vh;
-			padding: 1em;
-		}
-		aside {
-			background-color: #D7E8D4;
-			padding: 1em;
-		}
-		footer {
-			grid-area: footer;
-			background-color: yellowgreen;
-			padding: 1em;
 		}
