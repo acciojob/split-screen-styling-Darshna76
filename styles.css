@@ -1,1 +1,42 @@
-/*  your css code here. If applicable */
+body {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			display: grid;
+			grid-template-columns: 1fr 4fr;
+			grid-template-rows: repeat(5, 1fr);
+			grid-template-areas:
+				"header header"
+				"nav article"
+				"nav article"
+				"nav article"
+				"footer footer";
+			height: 100vh;
+		}
+		header {
+			grid-area: header;
+			background-color: yellowgreen;
+			padding: 1em;
+		}
+		nav {
+			grid-area: nav;
+			background-color: #D7E8D4;
+			padding: 1em;
+		}
+		article {
+			grid-area: article;
+			display: grid;
+			grid-template-columns: 3fr 1fr;
+			min-height: 60vh;
+			padding: 1em;
+		}
+		aside {
+			background-color: #D7E8D4;
+			padding: 1em;
+		}
+		footer {
+			grid-area: footer;
+			background-color: yellowgreen;
+			padding: 1em;
+		}
